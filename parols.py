@@ -1,0 +1,28 @@
+import random
+import time
+
+print("=====================================================")
+print("        Генератор паролей от Heisenberg              ")
+print("=====================================================")
+
+chars = "qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM!@#$%^&*()_+-"
+lenqth = int(input('[?] Введите длинну пароля: '))
+password = ""
+
+for i in range(lenqth):
+   password = password + random.choice(chars)
+
+print("================================================")
+print("          Подготовка к созданию пароля          ")
+print("================================================")
+time.sleep(4)
+
+print("================================================")
+print("            Создание пароля ...                 ")
+print("================================================")
+time.sleep(3)
+
+print(f"\n[+] Ваш надежный пароль готов:{password}")
+time.sleep(1)
+input("\n[ Нажмите Enter чтобы закрыть программу ]")
+      
